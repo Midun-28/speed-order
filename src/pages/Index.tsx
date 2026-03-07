@@ -62,7 +62,7 @@ const Index = () => {
               <section
                 key={cat.id}
                 id={cat.id}
-                ref={(el) => { sectionRefs.current[cat.id] = el; }}
+                ref={(el: HTMLDivElement | null) => { sectionRefs.current[cat.id] = el; }}
                 className="mb-8 scroll-mt-[160px]"
               >
                 <h2 className="text-lg font-bold text-foreground mb-3 flex items-center gap-2">
