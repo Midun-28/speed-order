@@ -8,10 +8,6 @@ import chickenGravy from "@/assets/chicken-gravy.jpg";
 import chickenUppuKari from "@/assets/chicken-uppu-kari.jpg";
 import chickenChettinad from "@/assets/chicken-chettinad.jpg";
 import chickenKabsa from "@/assets/chicken-kabsa.jpg";
-import muttonSukka from "@/assets/mutton-sukka.jpg";
-import muttonGravy from "@/assets/mutton-gravy.jpg";
-import muttonChops from "@/assets/mutton-chops.jpg";
-import muttonBiryani from "@/assets/mutton-biryani.jpg";
 import fishFry from "@/assets/fish-fry.jpg";
 import fishGravy from "@/assets/fish-gravy.jpg";
 import crabGravy from "@/assets/crab-gravy.jpg";
@@ -51,7 +47,6 @@ export interface Category {
 
 export const categories: Category[] = [
   { id: "chicken", name: "சிக்கன் வகைகள்", icon: "🍗" },
-  { id: "mutton", name: "மட்டு வகைகள்", icon: "🥩" },
   { id: "fish", name: "மீன் வகைகள்", icon: "🐟" },
   { id: "egg", name: "முட்டை வகைகள்", icon: "🥚" },
   { id: "quail", name: "காடை வகைகள்", icon: "🐦" },
@@ -67,11 +62,6 @@ export const menuItems: MenuItem[] = [
   { id: "c4", name: "சிக்கன் உப்பு கறி", price: 160, image: chickenUppuKari, category: "chicken" },
   { id: "c5", name: "சிக்கன் செட்டிநாடு", price: 170, image: chickenChettinad, category: "chicken" },
   { id: "c6", name: "சிக்கன் கப்ஸா", price: 180, image: chickenKabsa, category: "chicken" },
-  // மட்டு வகைகள்
-  { id: "m1", name: "மட்டு சுக்கா", price: 220, image: muttonSukka, category: "mutton" },
-  { id: "m2", name: "மட்டு கிரேவி", price: 230, image: muttonGravy, category: "mutton" },
-  { id: "m3", name: "மட்டு சாப்ஸ்", price: 240, image: muttonChops, category: "mutton" },
-  { id: "m4", name: "மட்டு பிரியாணி", price: 200, image: muttonBiryani, category: "mutton" },
   // மீன் வகைகள்
   { id: "f1", name: "மீன் வறுவல்", price: 140, image: fishFry, category: "fish" },
   { id: "f2", name: "மீன் கிரேவி", price: 150, image: fishGravy, category: "fish" },
